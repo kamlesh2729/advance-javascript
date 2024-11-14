@@ -1,6 +1,10 @@
 
 const arr = ["kamlesh", "sameer", "sagar", "saurabh"];
 
+// arr.slice(3);
+// console.log(arr);
+
+
 const button = document.getElementById("hello");
 
 button.addEventListener("click", () => {
@@ -22,6 +26,10 @@ button.addEventListener("click", () => {
         button.innerHTML = arr[3];
     },3000)
 });
+
+const fruties = ["apple", "orange", "grape", "watermelan","mango", "apple", "banana", "grape", "kiwi", "apple" ]
+
+
 
 // Closure
 var sum = function (a, b, c) {
@@ -161,7 +169,7 @@ console.log(user);
 
 const promiseThree = new Promise(function (resolve, reject) {
     setTimeout(function () {
-        let Error = true;
+        let Error = false;
         if (!Error) {
             resolve({ username: "kamlesh", password: "123456" });
         } else {
@@ -172,10 +180,9 @@ const promiseThree = new Promise(function (resolve, reject) {
 
 promiseThree.then(function(user) {
     console.log(user);
-    // return user.username;
+    return user.username;
+}).then(function (username) {
+    console.log(username);
+}).catch(function(error) {
+    console.log(error);
 })
-// .then(function (username) {
-//     console.log(username);
-// }).catch(function(error) {
-//     console.log(error);
-// })
