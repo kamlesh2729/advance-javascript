@@ -27,9 +27,36 @@ button.addEventListener("click", () => {
     },3000)
 });
 
+//*remove duplicate 
 const fruties = ["apple", "orange", "grape", "watermelan","mango", "apple", "banana", "grape", "kiwi", "apple" ]
+let uniarr = [];
 
+for (let item of fruties) {
+    if (!uniarr.includes(item)) {
+        uniarr.push(item);
+    }
+}
+console.log(uniarr);
+// fruties.forEach((fruti, index) => {
+//     console.log(fruti);
+// })
 
+//*word is palindrom or notpalindrom
+const word = document.querySelector("[data-input]").value;
+const Result = document.querySelector("[data-result]");
+const Word = "Kamlesh"
+function Checkpalindrom() {
+    const resword = Word.toLowerCase().split("").reverse().join("");
+    console.log(resword);
+    console.log(word);
+
+    if (Word == resword) {
+        console.log(`${Word}"word is palindrome"`);
+
+    } else {
+        console.log(`${Word} "word is not palindrome"`);
+    }
+}
 
 // Closure
 var sum = function (a, b, c) {
@@ -127,10 +154,10 @@ const Debouncing = function (fn, d) {
   let timer;
   return function () {
     let context = this,
-      args = arguments;
+    args = arguments;
     clearTimeout(timer);
     timer = setTimeout(() => {
-      getData.apply(context, arguments);
+    getData.apply(context, arguments);
     }, d);
   };
 };
@@ -142,7 +169,18 @@ const Betterfunction = Debouncing(getData, 600);
 
 
 
+
 // Callback
+
+
+
+
+//evet bubling
+
+
+
+
+//event delegation
 
 
 
