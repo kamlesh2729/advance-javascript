@@ -1,9 +1,4 @@
-
 const arr = ["kamlesh", "sameer", "sagar", "saurabh"];
-
-// arr.slice(3);
-// console.log(arr);
-
 
 const button = document.getElementById("hello");
 
@@ -27,36 +22,6 @@ button.addEventListener("click", () => {
     },3000)
 });
 
-//*remove duplicate 
-const fruties = ["apple", "orange", "grape", "watermelan","mango", "apple", "banana", "grape", "kiwi", "apple" ]
-let uniarr = [];
-
-for (let item of fruties) {
-    if (!uniarr.includes(item)) {
-        uniarr.push(item);
-    }
-}
-console.log(uniarr);
-// fruties.forEach((fruti, index) => {
-//     console.log(fruti);
-// })
-
-//*word is palindrom or notpalindrom
-const word = document.querySelector("[data-input]").value;
-const Result = document.querySelector("[data-result]");
-const Word = "Kamlesh"
-function Checkpalindrom() {
-    const resword = Word.toLowerCase().split("").reverse().join("");
-    console.log(resword);
-    console.log(word);
-
-    if (Word == resword) {
-        console.log(`${Word}"word is palindrome"`);
-
-    } else {
-        console.log(`${Word} "word is not palindrome"`);
-    }
-}
 
 // Closure
 var sum = function (a, b, c) {
@@ -171,12 +136,33 @@ const Betterfunction = Debouncing(getData, 600);
 
 
 // Callback
+// Define a function that accepts a callback
+function greet(name, callback) {
+    console.log("Hello " + name);
+    callback();
+}
 
+// Define a callback function
+function afterGreeting() {
+    console.log("Greeting is complete.");
+}
+
+// Call the function and pass the callback
+greet("Alice", afterGreeting);
 
 
 
 //evet bubling
+const parent = document.getElementById("parent");
+const child = document.getElementById("child");
 
+parent.addEventListener("click", () => {
+  console.log("Parent clicked");
+});
+
+child.addEventListener("click", () => {
+  console.log("Child clicked");
+});
 
 
 
