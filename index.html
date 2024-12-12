@@ -5,17 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>addvance javascript</title>
     <link rel="stylesheet" href="/style.css">
-    <script src="/advance.js" defer></script>
+    <!-- <script src="/advance.js" defer></script> -->
     <script src="/codinground.js" defer></script>
 </head>
 <body>
-    <div id="app"></div>
+    <!-- advance js  -->
+     <h2>Debouncing</h2>
+    <label for="">Debouncing</label>
+        <input type="text" name="search" onkeyup="Betterfunction()" />
+        <br>
+        <div data-debres></div>
+        <br>
+    <h2>Event Bubbling</h2>
+    <div class="bubbling">
+        Event Bubbling
+        <div id="parent">
+      <button id="child">Click me</button>
+    </div>
+        </div>
+    
+    <div class="delegation">
+    <h2>Event Delegation</h2>
+    <ul id="item-list">
+      <li class="item">Item 1</li>
+      <li class="item">Item 2</li>
+      <li class="item">Item 3</li>
+    </ul>
+<br>
+    <button id="add-item">Add Item</button>
+    </div>
+
+    <!-- advance js end  -->
+    <div id="app">
+    <h2>Throttling</h2>
+    <button type="submit" id="Throt">Throttling</button>
+    </div>
     <h1>welcome to <span id="hello">advance javascript</span>.</h1>
 <br>
-<label for="">Debouncing</label>
-    <input type="text" name="search" onkeyup="Betterfunction()" />
-    <br>
-    <br>
     <!-- <br> -->
     <label for="">Palindrome</label>
     <input type="text" name="search" id="inputText"/>
@@ -25,10 +51,5 @@
     <br>
     <br>
     <br>
-    <div>
-    <div id="parent">
-  <button id="child">Click me</button>
-</div>
-    </div>
 </body>
 </html>

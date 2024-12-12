@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bubbling{
+    width: 100vw;
+    height: 20vh;
+    background-color: darkseagreen;
+    margin: 5px 0px;
+}
+#parent{
+    background-color: rgb(241, 191, 96);
+    padding: 20px;
+}
+.delegation{
+    width: 100vw;
+    min-height: 30vh;
+    background-color: darkseagreen;
+    margin: 5px 0px;
+}
+#item-list{
+    background-color: rgb(243, 243, 106);
+    padding: 20px;
+}
+.item{
+    margin: 5px;
+    background-color: plum;
+}
+
+/* my laptop width 1280px */
+/* ipad width 980px */
+/* ipad pro width 1024px */
