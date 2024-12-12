@@ -304,4 +304,12 @@ promiseThree.then(function(user) {
 })
 
 
+//IIFE
+//An IIFE (Immediately Invoked Function Expression) is a function in JavaScript that is defined 
+//and executed immediately after its creation. It is a common pattern used to create a local scope 
+//and avoid polluting the global namespace.
+
+
+
+
 // Event loop 
